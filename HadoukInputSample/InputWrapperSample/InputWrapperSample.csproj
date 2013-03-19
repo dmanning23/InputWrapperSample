@@ -110,6 +110,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="StateMachineWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
@@ -143,6 +144,18 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\externals\FontBuddy\FontBuddy\FontBuddy.csproj">
+      <Project>{30A0EB57-95B0-4C85-A88E-71C40E9BE671}</Project>
+      <Name>FontBuddy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\externals\GameTimer\GameTimer\GameTimer.csproj">
+      <Project>{34F0272D-BBF9-4996-8EA4-B231872A28AF}</Project>
+      <Name>GameTimer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\externals\HadoukInput\HadoukInput\HadoukInput.csproj">
+      <Project>{F5CC3080-2D60-421C-9593-C520C58C5507}</Project>
+      <Name>HadoukInput</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HadoukInputSampleContent\HadoukInputSampleContent.contentproj">
       <Project>{7175C624-3820-4A1E-B9F3-6630BD4DA0EF}</Project>
       <Name>HadoukInputSampleContent %28Content%29</Name>

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0"?>
+<XnaContent>
+	<Asset Type="HadoukInput.MoveListXML">
+		<moves>
+
+			<!--fireball-->
+			<Item type="HadoukInput.MoveXML">
+				<name>hadouken</name>
+				<keystrokes>
+					<Item Type="string">Down</Item>
+					<Item Type="string">Forward</Item>
+					<Item Type="string">A</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>hadouken</name>
+				<keystrokes>
+					<Item Type="string">Down</Item>
+					<Item Type="string">AForward</Item>
+				</keystrokes>
+			</Item>
+
+			<!--Movement options-->
+
+			<!--defense moves-->
+			<Item type="HadoukInput.MoveXML">
+				<name>block</name>
+				<keystrokes>
+					<Item Type="string">B</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>dodge forward</name>
+				<keystrokes>
+					<Item Type="string">BForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>dodge back</name>
+				<keystrokes>
+					<Item Type="string">BBack</Item>
+				</keystrokes>
+			</Item>
+
+			<!--directions held-->
+			<Item type="HadoukInput.MoveXML">
+				<name>jump</name>
+				<keystrokes>
+					<Item Type="string">Up</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>duck</name>
+				<keystrokes>
+					<Item Type="string">Down</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>walk</name>
+				<keystrokes>
+					<Item Type="string">Forward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>turn around</name>
+				<keystrokes>
+					<Item Type="string">Back</Item>
+				</keystrokes>
+			</Item>
+
+			<!--directions let go-->
+
+			<Item type="HadoukInput.MoveXML">
+				<name>stop ducking</name>
+				<keystrokes>
+					<Item Type="string">DownRelease</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>stop walking</name>
+				<keystrokes>
+					<Item Type="string">ForwardRelease</Item>
+				</keystrokes>
+			</Item>
+
+			<!--Attack Moves-->
+
+			<!--quick attacks-->
+			<Item type="HadoukInput.MoveXML">
+				<name>quick attack</name>
+				<keystrokes>
+					<Item Type="string">A</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>quick high attack</name>
+				<keystrokes>
+					<Item Type="string">AUp</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>quick low attack</name>
+				<keystrokes>
+					<Item Type="string">ADown</Item>
+				</keystrokes>
+			</Item>
+
+			<!--strong attacks-->
+			<Item type="HadoukInput.MoveXML">
+				<name>strong attack</name>
+				<keystrokes>
+					<Item Type="string">X</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>strong high attack</name>
+				<keystrokes>
+					<Item Type="string">XUp</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>strong low atatck</name>
+				<keystrokes>
+					<Item Type="string">XDown</Item>
+				</keystrokes>
+			</Item>
+
+			<!--Y attacks-->
+			<Item type="HadoukInput.MoveXML">
+				<name>special attack</name>
+				<keystrokes>
+					<Item Type="string">Y</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>special high attack</name>
+				<keystrokes>
+					<Item Type="string">YUp</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>special low attack</name>
+				<keystrokes>
+					<Item Type="string">YDown</Item>
+				</keystrokes>
+			</Item>
+		</moves>
+	</Asset>
+</XnaContent>

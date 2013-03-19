@@ -8,6 +8,9 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using FontBuddyLib;
+using GameTimer;
+using HadoukInput;
 
 namespace InputWrapperSample
 {
@@ -16,13 +19,40 @@ namespace InputWrapperSample
 	/// </summary>
 	public class Game1 : Microsoft.Xna.Framework.Game
 	{
+		#region Members
+
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
+
+		/// <summary>
+		/// A font buddy we will use to write out to the screen
+		/// </summary>
+		private FontBuddy _text = new FontBuddy();
+
+		/// <summary>
+		/// A game clock for the input wrapper
+		/// </summary>
+		private GameClock _clock = new GameClock();
+
+		private CountdownTimer _timer = new CountdownTimer();
+
+		private InputState m_Input = new InputState();
+		private InputWrapper _inputWrapper;
+		private StateMachineWrapper _states = new StateMachineWrapper();
+
+		/// <summary>
+		/// used to write out text to the screen
+		/// </summary>
+		string _currentMove = "none";
+
+		#endregion //Members
 
 		public Game1()
 		{
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
+
+			_inputWrapper = new InputWrapper(PlayerIndex.One, _clock.GetCurrentTime);
 		}
 
 		/// <summary>
@@ -48,6 +78,11 @@ namespace InputWrapperSample
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
 			// TODO: use this.Content to load your game content here
+			_text.LoadContent(Content, "TestFont");
+
+			_inputWrapper.ReadSerializedFile(Content, "MoveList", _states.NameToIndex);
+
+			_clock.Start();
 		}
 
 		/// <summary>
@@ -72,6 +107,29 @@ namespace InputWrapperSample
 
 			// TODO: Add your update logic here
 
+			//update all the input, then check if it found anything
+			_clock.Update(gameTime);
+			_timer.Update(_clock);
+			m_Input.Update();
+			_inputWrapper.Update(m_Input, false);
+
+			//write out the buffer
+			Vector2 position = Vector2.Zero;
+
+			//If any patterns were matched in the input, they will be returned ni the NextMove method
+			int iNextMove = _inputWrapper.GetNextMove();
+
+			if (0.0f >= _timer.RemainingTime())
+			{
+				_currentMove = "none";
+			}
+
+			if ((-1 != iNextMove) && (0.0 >= _timer.RemainingTime()))
+			{
+				_timer.Start(0.5f);
+				_currentMove = _states.MoveNames[iNextMove];
+			}
+
 			base.Update(gameTime);
 		}
 
@@ -84,6 +142,22 @@ namespace InputWrapperSample
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
 			// TODO: Add your drawing code here
+
+			spriteBatch.Begin();
+
+			Vector2 position = Vector2.Zero;
+
+			//say what controller we are checking
+			_text.Write("Input Buffer: " + _inputWrapper.GetBufferedInput(), position, Justify.Left, 1.0f, Color.White, spriteBatch);
+			position.Y += _text.Font.MeasureString("test").Y;
+
+			_text.Write("Input Queue: " + _inputWrapper.ToString(), position, Justify.Left, 1.0f, Color.White, spriteBatch);
+			position.Y += _text.Font.MeasureString("test").Y;
+
+			_text.Write("Current Move: " + _currentMove, position, Justify.Left, 1.0f, Color.White, spriteBatch);
+			position.Y += _text.Font.MeasureString("test").Y;
+
+			spriteBatch.End();
 
 			base.Draw(gameTime);
 		}
