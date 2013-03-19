@@ -68,8 +68,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Move List.xml">
-      <Name>Move List</Name>
+    <Compile Include="MoveList.xml">
+      <Name>MoveList</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
     </Compile>
