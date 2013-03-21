@@ -14,9 +14,9 @@ InputWrapperSample: This verifies that the InputWrapper is working correctly.  F
 The moves are:
 
 ```
-A,B,X,Y (z,x,a,s): normal attacks
-up + A,B,X,Y (z,x,a,s): high attacks
-down + A,B,X,Y (z,x,a,s): low attacks
+A/B/X/Y (z/x/a/s): normal attacks
+up + A/B/X/Y (z/x/a/s): high attacks
+down + A/B/X/Y (z/x/a/s): low attacks
 down, forward, Abutton (z key): hadouken
 down, forward, down, forward, Abutton (z key): super hadouken
 down, back, Abutton (z key): hurricane kick
