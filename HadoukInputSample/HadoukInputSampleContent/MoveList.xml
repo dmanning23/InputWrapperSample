@@ -20,7 +20,42 @@
 				</keystrokes>
 			</Item>
 
-			<!--Movement options-->
+			<!--hurricane kick-->
+			<Item type="HadoukInput.MoveXML">
+				<name>hurricane kick</name>
+				<keystrokes>
+					<Item Type="string">Down</Item>
+					<Item Type="string">Back</Item>
+					<Item Type="string">A</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>hurricane kick</name>
+				<keystrokes>
+					<Item Type="string">Down</Item>
+					<Item Type="string">ABack</Item>
+				</keystrokes>
+			</Item>
+
+			<Item type="HadoukInput.MoveXML">
+				<name>super hadouken</name>
+				<keystrokes>
+					<Item Type="string">Down</Item>
+					<Item Type="string">Forward</Item>
+					<Item Type="string">Down</Item>
+					<Item Type="string">Forward</Item>
+					<Item Type="string">A</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>super hadouken</name>
+				<keystrokes>
+					<Item Type="string">Down</Item>
+					<Item Type="string">Forward</Item>
+					<Item Type="string">Down</Item>
+					<Item Type="string">AForward</Item>
+				</keystrokes>
+			</Item>
 
 			<!--defense moves-->
 			<Item type="HadoukInput.MoveXML">
@@ -39,47 +74,6 @@
 				<name>dodge back</name>
 				<keystrokes>
 					<Item Type="string">BBack</Item>
-				</keystrokes>
-			</Item>
-
-			<!--directions held-->
-			<Item type="HadoukInput.MoveXML">
-				<name>jump</name>
-				<keystrokes>
-					<Item Type="string">Up</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>duck</name>
-				<keystrokes>
-					<Item Type="string">Down</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>walk</name>
-				<keystrokes>
-					<Item Type="string">Forward</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>turn around</name>
-				<keystrokes>
-					<Item Type="string">Back</Item>
-				</keystrokes>
-			</Item>
-
-			<!--directions let go-->
-
-			<Item type="HadoukInput.MoveXML">
-				<name>stop ducking</name>
-				<keystrokes>
-					<Item Type="string">DownRelease</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>stop walking</name>
-				<keystrokes>
-					<Item Type="string">ForwardRelease</Item>
 				</keystrokes>
 			</Item>
 
