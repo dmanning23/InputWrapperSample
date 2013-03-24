@@ -60,9 +60,9 @@ namespace ControllerWrapperTest
 			Content.RootDirectory = "Content";
 
 			_controller = new ControllerWrapper(PlayerIndex.One);
-			_ButtonTimer = new CountdownTimer[(int)EKeystroke.RTrigger + 1];
+			_ButtonTimer = new CountdownTimer[(int)EKeystroke.RTriggerRelease + 1];
 
-			for (int i = 0; i < ((int)EKeystroke.RTrigger + 1); i++)
+			for (int i = 0; i < ((int)EKeystroke.RTriggerRelease + 1); i++)
 			{
 				_ButtonTimer[i] = new CountdownTimer();
 			}
@@ -193,7 +193,7 @@ namespace ControllerWrapperTest
 			position.Y += _text.Font.MeasureString("test").Y;
 
 			//draw the current state of each keystroke
-			for (int i = 0; i < ((int)EKeystroke.RTrigger + 1); i++)
+			for (int i = 0; i < ((int)EKeystroke.RTriggerRelease + 1); i++)
 			{
 				//Write the name of the button
 				position.X = _text.Write(((EKeystroke)i).ToString() + ": ", position, Justify.Left, 1.0f, Color.White, spriteBatch);
