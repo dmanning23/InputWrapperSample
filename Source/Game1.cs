@@ -1,16 +1,11 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
 using FontBuddyLib;
 using GameTimer;
 using HadoukInput;
+using FilenameBuddy;
 
 namespace InputWrapperSample
 {
@@ -52,7 +47,7 @@ namespace InputWrapperSample
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
 
-			_inputWrapper = new InputWrapper(PlayerIndex.One, _clock.GetCurrentTime);
+			_inputWrapper = new InputWrapper(new ControllerWrapper(PlayerIndex.One, true), _clock.GetCurrentTime);
 		}
 
 		/// <summary>
@@ -78,9 +73,9 @@ namespace InputWrapperSample
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
 			// TODO: use this.Content to load your game content here
-			_text.LoadContent(Content, "TestFont");
+			_text.LoadContent(Content, "ArialBlack14");
 
-			_inputWrapper.ReadSerializedFile(Content, "MoveList", _states.NameToIndex);
+			_inputWrapper.ReadXmlFile(new Filename("MoveList.xml"), _states.NameToIndex);
 
 			_clock.Start();
 		}

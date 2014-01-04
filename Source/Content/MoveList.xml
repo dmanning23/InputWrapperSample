@@ -3,6 +3,8 @@
 	<Asset Type="HadoukInput.MoveListXML">
 		<moves>
 
+
+
 			<!--fireball-->
 			<Item type="HadoukInput.MoveXML">
 				<name>hadouken</name>
@@ -37,6 +39,7 @@
 				</keystrokes>
 			</Item>
 
+			<!--super moves-->
 			<Item type="HadoukInput.MoveXML">
 				<name>super hadouken</name>
 				<keystrokes>
