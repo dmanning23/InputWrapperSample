@@ -141,6 +141,57 @@
 					<Item Type="string">YDown</Item>
 				</keystrokes>
 			</Item>
+
+			<!--directions-->
+			<Item type="HadoukInput.MoveXML">
+				<name>UpR</name>
+				<keystrokes>
+					<Item Type="string">UpR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpForwardR</name>
+				<keystrokes>
+					<Item Type="string">UpForwardR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardR</name>
+				<keystrokes>
+					<Item Type="string">ForwardR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownForwardR</name>
+				<keystrokes>
+					<Item Type="string">DownForwardR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownBackR</name>
+				<keystrokes>
+					<Item Type="string">DownBackR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownBackR</name>
+				<keystrokes>
+					<Item Type="string">DownBackR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackR</name>
+				<keystrokes>
+					<Item Type="string">BackR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpBackR</name>
+				<keystrokes>
+					<Item Type="string">UpBackR</Item>
+				</keystrokes>
+			</Item>
+
 		</moves>
 	</Asset>
 </XnaContent>
