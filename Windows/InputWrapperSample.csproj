@@ -95,6 +95,7 @@
     <Content Include="..\Source\Content\MoveList.xml">
       <Link>Content\MoveList.xml</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="SDL.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
