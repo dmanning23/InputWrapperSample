@@ -168,9 +168,9 @@
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
-				<name>DownBackR</name>
+				<name>DownR</name>
 				<keystrokes>
-					<Item Type="string">DownBackR</Item>
+					<Item Type="string">DownR</Item>
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
@@ -189,6 +189,13 @@
 				<name>UpBackR</name>
 				<keystrokes>
 					<Item Type="string">UpBackR</Item>
+				</keystrokes>
+			</Item>
+
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralR</name>
+				<keystrokes>
+					<Item Type="string">NeutralR</Item>
 				</keystrokes>
 			</Item>
 
