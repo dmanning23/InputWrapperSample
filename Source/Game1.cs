@@ -121,7 +121,7 @@ namespace InputWrapperSample
 
 			if ((-1 != iNextMove) && (0.0 >= _timer.RemainingTime()))
 			{
-				_timer.Start(0.5f);
+				_timer.Start(0.0f);
 				_currentMove = _states.MoveNames[iNextMove];
 			}
 
