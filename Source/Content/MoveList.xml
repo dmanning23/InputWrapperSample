@@ -2,169 +2,40 @@
 <XnaContent>
 	<Asset Type="HadoukInput.MoveListXML">
 		<moves>
-
-
-
-			<!--fireball-->
 			<Item type="HadoukInput.MoveXML">
-				<name>hadouken</name>
+				<name>Up</name>
+				<keystrokes>
+					<Item Type="string">Up</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>Down</name>
 				<keystrokes>
 					<Item Type="string">Down</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>Forward</name>
+				<keystrokes>
 					<Item Type="string">Forward</Item>
-					<Item Type="string">A</Item>
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
-				<name>hadouken</name>
+				<name>Back</name>
 				<keystrokes>
-					<Item Type="string">Down</Item>
-					<Item Type="string">AForward</Item>
-				</keystrokes>
-			</Item>
-
-			<!--hurricane kick-->
-			<Item type="HadoukInput.MoveXML">
-				<name>hurricane kick</name>
-				<keystrokes>
-					<Item Type="string">Down</Item>
 					<Item Type="string">Back</Item>
-					<Item Type="string">A</Item>
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
-				<name>hurricane kick</name>
+				<name>Neutral</name>
 				<keystrokes>
-					<Item Type="string">Down</Item>
-					<Item Type="string">ABack</Item>
+					<Item Type="string">Neutral</Item>
 				</keystrokes>
 			</Item>
-
-			<!--super moves-->
-			<Item type="HadoukInput.MoveXML">
-				<name>super hadouken</name>
-				<keystrokes>
-					<Item Type="string">Down</Item>
-					<Item Type="string">Forward</Item>
-					<Item Type="string">Down</Item>
-					<Item Type="string">Forward</Item>
-					<Item Type="string">A</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>super hadouken</name>
-				<keystrokes>
-					<Item Type="string">Down</Item>
-					<Item Type="string">Forward</Item>
-					<Item Type="string">Down</Item>
-					<Item Type="string">AForward</Item>
-				</keystrokes>
-			</Item>
-
-			<!--defense moves-->
-			<Item type="HadoukInput.MoveXML">
-				<name>block</name>
-				<keystrokes>
-					<Item Type="string">B</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>dodge forward</name>
-				<keystrokes>
-					<Item Type="string">BForward</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>dodge back</name>
-				<keystrokes>
-					<Item Type="string">BBack</Item>
-				</keystrokes>
-			</Item>
-
-			<!--Attack Moves-->
-
-			<!--quick attacks-->
-			<Item type="HadoukInput.MoveXML">
-				<name>quick attack</name>
-				<keystrokes>
-					<Item Type="string">A</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>quick high attack</name>
-				<keystrokes>
-					<Item Type="string">AUp</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>quick low attack</name>
-				<keystrokes>
-					<Item Type="string">ADown</Item>
-				</keystrokes>
-			</Item>
-
-			<!--strong attacks-->
-			<Item type="HadoukInput.MoveXML">
-				<name>strong attack</name>
-				<keystrokes>
-					<Item Type="string">X</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>strong high attack</name>
-				<keystrokes>
-					<Item Type="string">XUp</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>strong low atatck</name>
-				<keystrokes>
-					<Item Type="string">XDown</Item>
-				</keystrokes>
-			</Item>
-
-			<!--Y attacks-->
-			<Item type="HadoukInput.MoveXML">
-				<name>special attack</name>
-				<keystrokes>
-					<Item Type="string">Y</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>special high attack</name>
-				<keystrokes>
-					<Item Type="string">YUp</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>special low attack</name>
-				<keystrokes>
-					<Item Type="string">YDown</Item>
-				</keystrokes>
-			</Item>
-
-			<!--directions-->
 			<Item type="HadoukInput.MoveXML">
 				<name>UpR</name>
 				<keystrokes>
 					<Item Type="string">UpR</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>UpForwardR</name>
-				<keystrokes>
-					<Item Type="string">UpForwardR</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>ForwardR</name>
-				<keystrokes>
-					<Item Type="string">ForwardR</Item>
-				</keystrokes>
-			</Item>
-			<Item type="HadoukInput.MoveXML">
-				<name>DownForwardR</name>
-				<keystrokes>
-					<Item Type="string">DownForwardR</Item>
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
@@ -174,9 +45,9 @@
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
-				<name>DownBackR</name>
+				<name>ForwardR</name>
 				<keystrokes>
-					<Item Type="string">DownBackR</Item>
+					<Item Type="string">ForwardR</Item>
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
@@ -186,16 +57,303 @@
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
+				<name>NeutralR</name>
+				<keystrokes>
+					<Item Type="string">NeutralR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpForwardR</name>
+				<keystrokes>
+					<Item Type="string">UpForwardR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownForwardR</name>
+				<keystrokes>
+					<Item Type="string">DownForwardR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
 				<name>UpBackR</name>
 				<keystrokes>
 					<Item Type="string">UpBackR</Item>
 				</keystrokes>
 			</Item>
-
 			<Item type="HadoukInput.MoveXML">
-				<name>NeutralR</name>
+				<name>DownBackR</name>
 				<keystrokes>
-					<Item Type="string">NeutralR</Item>
+					<Item Type="string">DownBackR</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpUp</name>
+				<keystrokes>
+					<Item Type="string">UpUp</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpUpForward</name>
+				<keystrokes>
+					<Item Type="string">UpUpForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpForward</name>
+				<keystrokes>
+					<Item Type="string">UpForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpDownForward</name>
+				<keystrokes>
+					<Item Type="string">UpDownForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpDown</name>
+				<keystrokes>
+					<Item Type="string">UpDown</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpDownBack</name>
+				<keystrokes>
+					<Item Type="string">UpDownBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpBack</name>
+				<keystrokes>
+					<Item Type="string">UpBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpUpBack</name>
+				<keystrokes>
+					<Item Type="string">UpUpBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>UpNeutral</name>
+				<keystrokes>
+					<Item Type="string">UpNeutral</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardUp</name>
+				<keystrokes>
+					<Item Type="string">ForwardUp</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardUpForward</name>
+				<keystrokes>
+					<Item Type="string">ForwardUpForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardForward</name>
+				<keystrokes>
+					<Item Type="string">ForwardForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardDownForward</name>
+				<keystrokes>
+					<Item Type="string">ForwardDownForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardDown</name>
+				<keystrokes>
+					<Item Type="string">ForwardDown</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardDownBack</name>
+				<keystrokes>
+					<Item Type="string">ForwardDownBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardBack</name>
+				<keystrokes>
+					<Item Type="string">ForwardBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardUpBack</name>
+				<keystrokes>
+					<Item Type="string">ForwardUpBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>ForwardNeutral</name>
+				<keystrokes>
+					<Item Type="string">ForwardNeutral</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownUp</name>
+				<keystrokes>
+					<Item Type="string">DownUp</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownUpForward</name>
+				<keystrokes>
+					<Item Type="string">DownUpForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownForward</name>
+				<keystrokes>
+					<Item Type="string">DownForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownDownForward</name>
+				<keystrokes>
+					<Item Type="string">DownDownForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownDown</name>
+				<keystrokes>
+					<Item Type="string">DownDown</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownDownBack</name>
+				<keystrokes>
+					<Item Type="string">DownDownBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownBack</name>
+				<keystrokes>
+					<Item Type="string">DownBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownUpBack</name>
+				<keystrokes>
+					<Item Type="string">DownUpBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>DownNeutral</name>
+				<keystrokes>
+					<Item Type="string">DownNeutral</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackUp</name>
+				<keystrokes>
+					<Item Type="string">BackUp</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackUpForward</name>
+				<keystrokes>
+					<Item Type="string">BackUpForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackForward</name>
+				<keystrokes>
+					<Item Type="string">BackForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackDownForward</name>
+				<keystrokes>
+					<Item Type="string">BackDownForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackDown</name>
+				<keystrokes>
+					<Item Type="string">BackDown</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackDownBack</name>
+				<keystrokes>
+					<Item Type="string">BackDownBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackBack</name>
+				<keystrokes>
+					<Item Type="string">BackBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackUpBack</name>
+				<keystrokes>
+					<Item Type="string">BackUpBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>BackNeutral</name>
+				<keystrokes>
+					<Item Type="string">BackNeutral</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralUp</name>
+				<keystrokes>
+					<Item Type="string">NeutralUp</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralUpForward</name>
+				<keystrokes>
+					<Item Type="string">NeutralUpForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralForward</name>
+				<keystrokes>
+					<Item Type="string">NeutralForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralDownForward</name>
+				<keystrokes>
+					<Item Type="string">NeutralDownForward</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralDown</name>
+				<keystrokes>
+					<Item Type="string">NeutralDown</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralDownBack</name>
+				<keystrokes>
+					<Item Type="string">NeutralDownBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralBack</name>
+				<keystrokes>
+					<Item Type="string">NeutralBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralUpBack</name>
+				<keystrokes>
+					<Item Type="string">NeutralUpBack</Item>
+				</keystrokes>
+			</Item>
+			<Item type="HadoukInput.MoveXML">
+				<name>NeutralNeutral</name>
+				<keystrokes>
+					<Item Type="string">NeutralNeutral</Item>
 				</keystrokes>
 			</Item>
 
