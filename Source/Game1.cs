@@ -116,7 +116,7 @@ namespace InputWrapperSample
 
 			if (0.0f >= _timer.RemainingTime())
 			{
-				_currentMove = "none";
+				_currentMove = "";
 			}
 
 			if ((-1 != iNextMove) && (0.0 >= _timer.RemainingTime()))
