@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -35,10 +36,7 @@ namespace InputWrapperSample
 		private InputWrapper _inputWrapper;
 		private StateMachineWrapper _states = new StateMachineWrapper();
 
-		/// <summary>
-		/// used to write out text to the screen
-		/// </summary>
-		string _currentMove = "none";
+		List<string> moves;
 
 		#endregion //Members
 
@@ -46,6 +44,7 @@ namespace InputWrapperSample
 		{
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
+			moves = new List<string>();
 
 			_inputWrapper = new InputWrapper(new ControllerWrapper(PlayerIndex.One, true), _clock.GetCurrentTime);
 		}
@@ -114,15 +113,10 @@ namespace InputWrapperSample
 			//If any patterns were matched in the input, they will be returned ni the NextMove method
 			int iNextMove = _inputWrapper.GetNextMove();
 
-			if (0.0f >= _timer.RemainingTime())
-			{
-				_currentMove = "";
-			}
-
 			if ((-1 != iNextMove) && (0.0 >= _timer.RemainingTime()))
 			{
 				_timer.Start(0.0f);
-				_currentMove = _states.MoveNames[iNextMove];
+				moves.Add(_states.MoveNames[iNextMove]);
 			}
 
 			base.Update(gameTime);
@@ -144,13 +138,19 @@ namespace InputWrapperSample
 
 			//say what controller we are checking
 			_text.Write("Input Buffer: " + _inputWrapper.GetBufferedInput(), position, Justify.Left, 1.0f, Color.White, spriteBatch);
-			position.Y += _text.Font.MeasureString("test").Y;
+			position.Y += _text.Font.LineSpacing;
 
 			_text.Write("Input Queue: " + _inputWrapper.ToString(), position, Justify.Left, 1.0f, Color.White, spriteBatch);
-			position.Y += _text.Font.MeasureString("test").Y;
+			position.Y += _text.Font.LineSpacing;
 
-			_text.Write("Current Move: " + _currentMove, position, Justify.Left, 1.0f, Color.White, spriteBatch);
-			position.Y += _text.Font.MeasureString("test").Y;
+			_text.Write("Current Move: ", position, Justify.Left, 1.0f, Color.White, spriteBatch);
+			position.Y += _text.Font.LineSpacing;
+
+			for (int i = moves.Count - 1; i >= 0; i--)
+			{
+				_text.Write(moves[i], position, Justify.Left, 0.5f, Color.White, spriteBatch);
+				position.Y += _text.Font.LineSpacing * 0.5f;
+			}
 
 			spriteBatch.End();
 
