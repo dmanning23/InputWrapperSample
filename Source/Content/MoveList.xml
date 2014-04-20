@@ -34,25 +34,25 @@
 			</Item>
 			
 			<Item type="HadoukInput.MoveXML">
-				<name>FlyUpShootForward</name>
+				<name>FlyUpShootNeutral</name>
 				<keystrokes>
 					<Item Type="string">Up</Item>
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
-				<name>FlyDownShootForward</name>
+				<name>FlyDownShootNeutral</name>
 				<keystrokes>
 					<Item Type="string">Down</Item>
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
-				<name>FlyForwardShootForward</name>
+				<name>FlyForwardShootNeutral</name>
 				<keystrokes>
 					<Item Type="string">Forward</Item>
 				</keystrokes>
 			</Item>
 			<Item type="HadoukInput.MoveXML">
-				<name>FlyBackwardShootForward</name>
+				<name>FlyBackwardShootNeutral</name>
 				<keystrokes>
 					<Item Type="string">Back</Item>
 				</keystrokes>
