@@ -19,3 +19,6 @@
 [submodule "externals/XNA"]
 	path = externals/XNA
 	url = git@github.com:dmanning23/XnaCompiledResources.git
+[submodule "externals/XmlBuddy"]
+	path = externals/XmlBuddy
+	url = git@github.com:dmanning23/XmlBuddy.git

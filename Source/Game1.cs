@@ -1,12 +1,11 @@
-using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
+using FilenameBuddy;
 using FontBuddyLib;
 using GameTimer;
 using HadoukInput;
-using FilenameBuddy;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace InputWrapperSample
 {
@@ -50,19 +49,6 @@ namespace InputWrapperSample
 		}
 
 		/// <summary>
-		/// Allows the game to perform any initialization it needs to before starting to run.
-		/// This is where it can query for any required services and load any non-graphic
-		/// related content.  Calling base.Initialize will enumerate through any components
-		/// and initialize them as well.
-		/// </summary>
-		protected override void Initialize()
-		{
-			// TODO: Add your initialization logic here
-
-			base.Initialize();
-		}
-
-		/// <summary>
 		/// LoadContent will be called once per game and is the place to load
 		/// all of your content.
 		/// </summary>
@@ -71,21 +57,10 @@ namespace InputWrapperSample
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
-			// TODO: use this.Content to load your game content here
 			_text.LoadContent(Content, "ArialBlack14");
-
 			_inputWrapper.ReadXmlFile(new Filename("MoveList.xml"), _states.NameToIndex);
 
 			_clock.Start();
-		}
-
-		/// <summary>
-		/// UnloadContent will be called once per game and is the place to unload
-		/// all content.
-		/// </summary>
-		protected override void UnloadContent()
-		{
-			// TODO: Unload any non ContentManager content here
 		}
 
 		/// <summary>
@@ -99,16 +74,11 @@ namespace InputWrapperSample
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
 				this.Exit();
 
-			// TODO: Add your update logic here
-
 			//update all the input, then check if it found anything
 			_clock.Update(gameTime);
 			_timer.Update(_clock);
 			m_Input.Update();
 			_inputWrapper.Update(m_Input, false);
-
-			//write out the buffer
-			Vector2 position = Vector2.Zero;
 
 			//If any patterns were matched in the input, they will be returned ni the NextMove method
 			int iNextMove = _inputWrapper.GetNextMove();
@@ -130,25 +100,23 @@ namespace InputWrapperSample
 		{
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
-			// TODO: Add your drawing code here
-
 			spriteBatch.Begin();
 
 			Vector2 position = Vector2.Zero;
 
 			//say what controller we are checking
-			_text.Write("Input Buffer: " + _inputWrapper.GetBufferedInput(), position, Justify.Left, 1.0f, Color.White, spriteBatch);
+			_text.Write("Input Buffer: " + _inputWrapper.GetBufferedInput(), position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
 			position.Y += _text.Font.LineSpacing;
 
-			_text.Write("Input Queue: " + _inputWrapper.ToString(), position, Justify.Left, 1.0f, Color.White, spriteBatch);
+			_text.Write("Input Queue: " + _inputWrapper.ToString(), position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
 			position.Y += _text.Font.LineSpacing;
 
-			_text.Write("Current Move: ", position, Justify.Left, 1.0f, Color.White, spriteBatch);
+			_text.Write("Current Move: ", position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
 			position.Y += _text.Font.LineSpacing;
 
 			for (int i = moves.Count - 1; i >= 0; i--)
 			{
-				_text.Write(moves[i], position, Justify.Left, 0.5f, Color.White, spriteBatch);
+				_text.Write(moves[i], position, Justify.Left, 0.5f, Color.White, spriteBatch, _clock);
 				position.Y += _text.Font.LineSpacing * 0.5f;
 			}
 
