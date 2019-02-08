@@ -1,178 +1,180 @@
 ﻿<?xml version="1.0"?>
-<HadoukInput.MoveListXML>
-	<Moves>
+<MoveList>
+	<moves>
+		
 		<!--Movement options-->
-
+		
 		<!--defense moves-->
-		<Move>
+		<move>
 			<name>Defend</name>
 			<keystrokes>
 				<keystroke>B</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>DefendRelease</name>
 			<keystrokes>
 				<keystroke>BRelease</keystroke>
 			</keystrokes>
-		</Move>
-
+		</move>
+		
 		<!--flying moves-->
-		<Move>
+		<move>
 			<name>DefendUp</name>
 			<keystrokes>
 				<keystroke>BUp</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>DefendDown</name>
 			<keystrokes>
 				<keystroke>BDown</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>DefendForward</name>
 			<keystrokes>
 				<keystroke>BForward</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>DefendBack</name>
 			<keystrokes>
 				<keystroke>BBack</keystroke>
 			</keystrokes>
-		</Move>
-
+		</move>
+		
 		<!--directions held-->
-		<Move>
+		<move>
 			<name>Up</name>
 			<keystrokes>
 				<keystroke>Up</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>Down</name>
 			<keystrokes>
 				<keystroke>Down</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>Forward</name>
 			<keystrokes>
 				<keystroke>Forward</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>Back</name>
 			<keystrokes>
 				<keystroke>Back</keystroke>
 			</keystrokes>
-		</Move>
-
+		</move>
+		
 		<!--directions let go-->
-		<Move>
+		<move>
 			<name>NeutralDir</name>
 			<keystrokes>
 				<keystroke>Neutral</keystroke>
 			</keystrokes>
-		</Move>
-
+		</move>
+		
 		<!--Attack Moves-->
 
 		<!--quick attacks-->
-		<Move>
+		<move>
 			<name>Quick</name>
 			<keystrokes>
 				<keystroke>A</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>QuickUp</name>
 			<keystrokes>
 				<keystroke>AUp</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>QuickDown</name>
 			<keystrokes>
 				<keystroke>ADown</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>QuickForward</name>
 			<keystrokes>
 				<keystroke>AForward</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>QuickBack</name>
 			<keystrokes>
 				<keystroke>ABack</keystroke>
 			</keystrokes>
-		</Move>
-
+		</move>
+		
 		<!--strong attacks-->
-		<Move>
+		<move>
 			<name>Strong</name>
 			<keystrokes>
 				<keystroke>X</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>StrongUp</name>
 			<keystrokes>
 				<keystroke>XUp</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>StrongDown</name>
 			<keystrokes>
 				<keystroke>XDown</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>StrongForward</name>
 			<keystrokes>
 				<keystroke>XForward</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>StrongBack</name>
 			<keystrokes>
 				<keystroke>XBack</keystroke>
 			</keystrokes>
-		</Move>
-
+		</move>
+		
 		<!--Special attacks-->
-		<Move>
+		<move>
 			<name>Special</name>
 			<keystrokes>
 				<keystroke>Y</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>SpecialUp</name>
 			<keystrokes>
 				<keystroke>YUp</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>SpecialDown</name>
 			<keystrokes>
 				<keystroke>YDown</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>SpecialForward</name>
 			<keystrokes>
 				<keystroke>YForward</keystroke>
 			</keystrokes>
-		</Move>
-		<Move>
+		</move>
+		<move>
 			<name>SpecialBack</name>
 			<keystrokes>
 				<keystroke>YBack</keystroke>
 			</keystrokes>
-		</Move>
-	</Moves>
-</HadoukInput.MoveListXML>
+		</move>
+		
+	</moves>
+</MoveList>

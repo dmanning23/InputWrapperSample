@@ -3,6 +3,7 @@ using FontBuddyLib;
 using GameTimer;
 using HadoukInput;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
@@ -29,11 +30,8 @@ namespace InputWrapperSample
 		/// </summary>
 		private GameClock _clock = new GameClock();
 
-		private CountdownTimer _timer = new CountdownTimer();
-
 		private InputState m_Input = new InputState();
 		private InputWrapper _inputWrapper;
-		private StateMachineWrapper _states = new StateMachineWrapper();
 
 		List<string> moves;
 
@@ -58,7 +56,10 @@ namespace InputWrapperSample
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
 			_text.LoadContent(Content, "ArialBlack14");
-			_inputWrapper.ReadXmlFile(new Filename("MoveList.xml"), _states.NameToIndex);
+			using (var content = new ContentManager(Services) { RootDirectory = "Content" })
+			{
+				_inputWrapper.ReadXmlFile(new Filename("MoveList"), content);
+			}
 
 			_clock.Start();
 		}
@@ -76,17 +77,15 @@ namespace InputWrapperSample
 
 			//update all the input, then check if it found anything
 			_clock.Update(gameTime);
-			_timer.Update(_clock);
 			m_Input.Update();
 			_inputWrapper.Update(m_Input, false);
 
 			//If any patterns were matched in the input, they will be returned ni the NextMove method
-			int iNextMove = _inputWrapper.GetNextMove();
+			var nextMove = _inputWrapper.GetNextMove();
 
-			if ((-1 != iNextMove) && (0.0 >= _timer.RemainingTime()))
+			if (!string.IsNullOrEmpty(nextMove))
 			{
-				_timer.Start(0.0f);
-				moves.Add(_states.MoveNames[iNextMove]);
+				moves.Add(nextMove);
 			}
 
 			base.Update(gameTime);
