@@ -1,180 +1,391 @@
 ﻿<?xml version="1.0"?>
 <MoveList>
-	<moves>
-		
-		<!--Movement options-->
-		
-		<!--defense moves-->
-		<move>
-			<name>Defend</name>
+	<Moves>
+		<Move>
+			<name>Transform</name>
 			<keystrokes>
-				<keystroke>B</keystroke>
+				<Item Type="string">RShoulder</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>DefendRelease</name>
+		</Move>
+		<Move>
+			<name>Transform</name>
 			<keystrokes>
-				<keystroke>BRelease</keystroke>
+				<Item Type="string">RShoulderUp</Item>
 			</keystrokes>
-		</move>
-		
-		<!--flying moves-->
-		<move>
-			<name>DefendUp</name>
+		</Move>
+		<Move>
+			<name>Transform</name>
 			<keystrokes>
-				<keystroke>BUp</keystroke>
+				<Item Type="string">RShoulderDown</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>DefendDown</name>
+		</Move>
+		<Move>
+			<name>Transform</name>
 			<keystrokes>
-				<keystroke>BDown</keystroke>
+				<Item Type="string">RShoulderForward</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>DefendForward</name>
+		</Move>
+		<Move>
+			<name>Transform</name>
 			<keystrokes>
-				<keystroke>BForward</keystroke>
+				<Item Type="string">RShoulderBack</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>DefendBack</name>
-			<keystrokes>
-				<keystroke>BBack</keystroke>
-			</keystrokes>
-		</move>
-		
-		<!--directions held-->
-		<move>
-			<name>Up</name>
-			<keystrokes>
-				<keystroke>Up</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>Down</name>
-			<keystrokes>
-				<keystroke>Down</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>Forward</name>
-			<keystrokes>
-				<keystroke>Forward</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>Back</name>
-			<keystrokes>
-				<keystroke>Back</keystroke>
-			</keystrokes>
-		</move>
-		
-		<!--directions let go-->
-		<move>
-			<name>NeutralDir</name>
-			<keystrokes>
-				<keystroke>Neutral</keystroke>
-			</keystrokes>
-		</move>
-		
-		<!--Attack Moves-->
+		</Move>
 
-		<!--quick attacks-->
-		<move>
-			<name>Quick</name>
+		<Move>
+			<name>FlyUpShootNeutral</name>
 			<keystrokes>
-				<keystroke>A</keystroke>
+				<Item Type="string">Up</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>QuickUp</name>
+		</Move>
+		<Move>
+			<name>FlyDownShootNeutral</name>
 			<keystrokes>
-				<keystroke>AUp</keystroke>
+				<Item Type="string">Down</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>QuickDown</name>
+		</Move>
+		<Move>
+			<name>FlyForwardShootNeutral</name>
 			<keystrokes>
-				<keystroke>ADown</keystroke>
+				<Item Type="string">Forward</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>QuickForward</name>
+		</Move>
+		<Move>
+			<name>FlyBackwardShootNeutral</name>
 			<keystrokes>
-				<keystroke>AForward</keystroke>
+				<Item Type="string">Back</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>QuickBack</name>
+		</Move>
+		<Move>
+			<name>SitStillShootNeutral</name>
 			<keystrokes>
-				<keystroke>ABack</keystroke>
+				<Item Type="string">Neutral</Item>
 			</keystrokes>
-		</move>
-		
-		<!--strong attacks-->
-		<move>
-			<name>Strong</name>
+		</Move>
+		<Move>
+			<name>SitStillShootUp</name>
 			<keystrokes>
-				<keystroke>X</keystroke>
+				<Item Type="string">UpR</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>StrongUp</name>
+		</Move>
+		<Move>
+			<name>SitStillShootDown</name>
 			<keystrokes>
-				<keystroke>XUp</keystroke>
+				<Item Type="string">DownR</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>StrongDown</name>
+		</Move>
+		<Move>
+			<name>SitStillShootForward</name>
 			<keystrokes>
-				<keystroke>XDown</keystroke>
+				<Item Type="string">ForwardR</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>StrongForward</name>
+		</Move>
+		<Move>
+			<name>SitStillShootBackward</name>
 			<keystrokes>
-				<keystroke>XForward</keystroke>
+				<Item Type="string">BackR</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>StrongBack</name>
+		</Move>
+		<Move>
+			<name>SitStillShootNeutral</name>
 			<keystrokes>
-				<keystroke>XBack</keystroke>
+				<Item Type="string">NeutralR</Item>
 			</keystrokes>
-		</move>
-		
-		<!--Special attacks-->
-		<move>
-			<name>Special</name>
+		</Move>
+		<Move>
+			<name>SitStillShootUpForward</name>
 			<keystrokes>
-				<keystroke>Y</keystroke>
+				<Item Type="string">UpForwardR</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>SpecialUp</name>
+		</Move>
+		<Move>
+			<name>SitStillShootDownForward</name>
 			<keystrokes>
-				<keystroke>YUp</keystroke>
+				<Item Type="string">DownForwardR</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>SpecialDown</name>
+		</Move>
+		<Move>
+			<name>SitStillShootUpBack</name>
 			<keystrokes>
-				<keystroke>YDown</keystroke>
+				<Item Type="string">UpBackR</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>SpecialForward</name>
+		</Move>
+		<Move>
+			<name>SitStillShootDownBack</name>
 			<keystrokes>
-				<keystroke>YForward</keystroke>
+				<Item Type="string">DownBackR</Item>
 			</keystrokes>
-		</move>
-		<move>
-			<name>SpecialBack</name>
+		</Move>
+		<Move>
+			<name>FlyUpShootUp</name>
 			<keystrokes>
-				<keystroke>YBack</keystroke>
+				<Item Type="string">UpUp</Item>
 			</keystrokes>
-		</move>
-		
-	</moves>
+		</Move>
+		<Move>
+			<name>FlyUpShootUpForward</name>
+			<keystrokes>
+				<Item Type="string">UpUpForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyUpShootForward</name>
+			<keystrokes>
+				<Item Type="string">UpForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyUpShootDownForward</name>
+			<keystrokes>
+				<Item Type="string">UpDownForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyUpShootDown</name>
+			<keystrokes>
+				<Item Type="string">UpDown</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyUpShootDownBack</name>
+			<keystrokes>
+				<Item Type="string">UpDownBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyUpShootBackward</name>
+			<keystrokes>
+				<Item Type="string">UpBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyUpShootUpBack</name>
+			<keystrokes>
+				<Item Type="string">UpUpBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyUpShootNeutral</name>
+			<keystrokes>
+				<Item Type="string">UpNeutral</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyForwardShootUp</name>
+			<keystrokes>
+				<Item Type="string">ForwardUp</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyForwardShootUpForward</name>
+			<keystrokes>
+				<Item Type="string">ForwardUpForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyForwardShootForward</name>
+			<keystrokes>
+				<Item Type="string">ForwardForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyForwardShootDownForward</name>
+			<keystrokes>
+				<Item Type="string">ForwardDownForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyForwardShootDown</name>
+			<keystrokes>
+				<Item Type="string">ForwardDown</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyForwardShootDownBack</name>
+			<keystrokes>
+				<Item Type="string">ForwardDownBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyForwardShootBackward</name>
+			<keystrokes>
+				<Item Type="string">ForwardBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyForwardShootUpBack</name>
+			<keystrokes>
+				<Item Type="string">ForwardUpBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyForwardShootNeutral</name>
+			<keystrokes>
+				<Item Type="string">ForwardNeutral</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyDownShootUp</name>
+			<keystrokes>
+				<Item Type="string">DownUp</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyDownShootUpForward</name>
+			<keystrokes>
+				<Item Type="string">DownUpForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyDownShootForward</name>
+			<keystrokes>
+				<Item Type="string">DownForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyDownShootDownForward</name>
+			<keystrokes>
+				<Item Type="string">DownDownForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyDownShootDown</name>
+			<keystrokes>
+				<Item Type="string">DownDown</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyDownShootDownBack</name>
+			<keystrokes>
+				<Item Type="string">DownDownBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyDownShootBackward</name>
+			<keystrokes>
+				<Item Type="string">DownBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyDownShootUpBack</name>
+			<keystrokes>
+				<Item Type="string">DownUpBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyDownShootNeutral</name>
+			<keystrokes>
+				<Item Type="string">DownNeutral</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyBackwardShootUp</name>
+			<keystrokes>
+				<Item Type="string">BackUp</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyBackwardShootUpForward</name>
+			<keystrokes>
+				<Item Type="string">BackUpForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyBackwardShootForward</name>
+			<keystrokes>
+				<Item Type="string">BackForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyBackwardShootDownForward</name>
+			<keystrokes>
+				<Item Type="string">BackDownForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyBackwardShootDown</name>
+			<keystrokes>
+				<Item Type="string">BackDown</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyBackwardShootDownBack</name>
+			<keystrokes>
+				<Item Type="string">BackDownBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyBackwardShootBackward</name>
+			<keystrokes>
+				<Item Type="string">BackBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FlyBackwardShootUpBack</name>
+			<keystrokes>
+				<Item Type="string">BackUpBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootBackward</name>
+			<keystrokes>
+				<Item Type="string">NeutralBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootUp</name>
+			<keystrokes>
+				<Item Type="string">NeutralUp</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootUpForward</name>
+			<keystrokes>
+				<Item Type="string">NeutralUpForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootForward</name>
+			<keystrokes>
+				<Item Type="string">NeutralForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootDownForward</name>
+			<keystrokes>
+				<Item Type="string">NeutralDownForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootDown</name>
+			<keystrokes>
+				<Item Type="string">NeutralDown</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootDownBack</name>
+			<keystrokes>
+				<Item Type="string">NeutralDownBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootBackward</name>
+			<keystrokes>
+				<Item Type="string">NeutralBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootUpBack</name>
+			<keystrokes>
+				<Item Type="string">NeutralUpBack</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>SitStillShootNeutral</name>
+			<keystrokes>
+				<Item Type="string">NeutralNeutral</Item>
+			</keystrokes>
+		</Move>
+
+	</Moves>
 </MoveList>
