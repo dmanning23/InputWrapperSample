@@ -43,7 +43,8 @@ namespace InputWrapperSample
 			Content.RootDirectory = "Content";
 			moves = new List<string>();
 
-			_inputWrapper = new InputWrapper(new ControllerWrapper(PlayerIndex.One, true), _clock.GetCurrentTime);
+			Mappings.UseKeyboard[0] = true;
+			_inputWrapper = new InputWrapper(new ControllerWrapper(0), _clock.GetCurrentTime);
 		}
 
 		/// <summary>
@@ -104,19 +105,20 @@ namespace InputWrapperSample
 			Vector2 position = Vector2.Zero;
 
 			//say what controller we are checking
+			var lineSpacing = _text.MeasureString("Input Buffer: ");
 			_text.Write("Input Buffer: " + _inputWrapper.GetBufferedInput(), position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
-			position.Y += _text.Font.LineSpacing;
+			position.Y += lineSpacing.Y;
 
 			_text.Write("Input Queue: " + _inputWrapper.ToString(), position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
-			position.Y += _text.Font.LineSpacing;
+			position.Y += lineSpacing.Y;
 
 			_text.Write("Current Move: ", position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
-			position.Y += _text.Font.LineSpacing;
+			position.Y += lineSpacing.Y;
 
 			for (int i = moves.Count - 1; i >= 0; i--)
 			{
 				_text.Write(moves[i], position, Justify.Left, 0.5f, Color.White, spriteBatch, _clock);
-				position.Y += _text.Font.LineSpacing * 0.5f;
+				position.Y += lineSpacing.Y * 0.5f;
 			}
 
 			spriteBatch.End();
