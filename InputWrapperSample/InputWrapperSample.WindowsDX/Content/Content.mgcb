@@ -70,8 +70,13 @@
 /processorParam:TextureFormat=Compressed
 /build:ArialBlack96.spritefont
 
-#begin MoveList.xml
+#begin GrimoireMoveList.xml
 /importer:XmlSourceImporter
 /processor:XmlDocumentProcessor
-/build:MoveList.xml
+/build:GrimoireMoveList.xml
+
+#begin RoboJetsMoveList.xml
+/importer:XmlSourceImporter
+/processor:XmlDocumentProcessor
+/build:RoboJetsMoveList.xml
 

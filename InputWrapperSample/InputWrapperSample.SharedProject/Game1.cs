@@ -59,7 +59,7 @@ namespace InputWrapperSample
 			_text.LoadContent(Content, "ArialBlack14");
 			using (var content = new ContentManager(Services) { RootDirectory = "Content" })
 			{
-				_inputWrapper.ReadXmlFile(new Filename("MoveList"), content);
+				_inputWrapper.ReadXmlFile(new Filename("GrimoireMoveList.xml"), content);
 			}
 
 			_clock.Start();
