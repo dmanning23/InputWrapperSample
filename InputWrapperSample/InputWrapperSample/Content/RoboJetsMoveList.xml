@@ -55,6 +55,12 @@
 			</keystrokes>
 		</Move>
         <Move>
+			<name>FireGun</name>
+			<keystrokes>
+				<Item>RTriggerHeld</Item>
+			</keystrokes>
+		</Move>
+        <Move>
 			<name>FireMissile</name>
 			<keystrokes>
                 <Item>LTrigger</Item>
