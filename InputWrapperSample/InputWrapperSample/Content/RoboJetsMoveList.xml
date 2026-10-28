@@ -4,62 +4,60 @@
 		<Move>
 			<name>Transform</name>
 			<keystrokes>
-				<Item Type="string">RShoulder</Item>
-			</keystrokes>
-		</Move>
-		<Move>
-			<name>Transform</name>
-			<keystrokes>
-				<Item Type="string">RShoulderUp</Item>
-			</keystrokes>
-		</Move>
-		<Move>
-			<name>Transform</name>
-			<keystrokes>
-				<Item Type="string">RShoulderDown</Item>
-			</keystrokes>
-		</Move>
-		<Move>
-			<name>Transform</name>
-			<keystrokes>
-				<Item Type="string">RShoulderForward</Item>
-			</keystrokes>
-		</Move>
-		<Move>
-			<name>Transform</name>
-			<keystrokes>
-				<Item Type="string">RShoulderBack</Item>
+				<Item>RShoulder</Item>
 			</keystrokes>
 		</Move>
 
         <Move>
-			<name>FireGun</name>
+			<name>FireSuper</name>
 			<keystrokes>
-				<Item Type="string">RTrigger</Item>
+				<Item>LTriggerRTriggerLShoulder</Item>
 			</keystrokes>
 		</Move>
-		<Move>
-			<name>FireGun</name>
+        <Move>
+			<name>FireSuper</name>
 			<keystrokes>
-				<Item Type="string">RTriggerUp</Item>
+                <Item>LShoulderHeld</Item>
+                <Item>LTriggerRTrigger</Item>
 			</keystrokes>
 		</Move>
-		<Move>
-			<name>FireGun</name>
+         <Move>
+			<name>FireGunSpecial</name>
 			<keystrokes>
-				<Item Type="string">RTriggerDown</Item>
+                <Item>RTriggerLShoulder</Item>
 			</keystrokes>
 		</Move>
-		<Move>
-			<name>FireGun</name>
+        <Move>
+			<name>FireGunSpecial</name>
 			<keystrokes>
-				<Item Type="string">RTriggerForward</Item>
+                <Item>LShoulderHeld</Item>
+                <Item>RTrigger</Item>
 			</keystrokes>
 		</Move>
+		
 		<Move>
+			<name>FireMissileSpecial</name>
+			<keystrokes>
+                <Item>LTriggerLShoulder</Item>
+			</keystrokes>
+		</Move>
+        <Move>
+			<name>FireMissileSpecial</name>
+			<keystrokes>
+                <Item>LShoulderHeld</Item>
+                <Item>LTrigger</Item>
+			</keystrokes>
+		</Move>
+        <Move>
 			<name>FireGun</name>
 			<keystrokes>
-				<Item Type="string">RTriggerBack</Item>
+				<Item>RTrigger</Item>
+			</keystrokes>
+		</Move>
+        <Move>
+			<name>FireMissile</name>
+			<keystrokes>
+                <Item>LTrigger</Item>
 			</keystrokes>
 		</Move>
 

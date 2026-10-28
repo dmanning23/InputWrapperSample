@@ -46,59 +46,11 @@
 				<keystroke>LShoulder</keystroke>
 			</keystrokes>
 		</move>
-		<move>
-			<name>CastSpell1</name>
-			<keystrokes>
-				<keystroke>LShoulderUp</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell1</name>
-			<keystrokes>
-				<keystroke>LShoulderDown</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell1</name>
-			<keystrokes>
-				<keystroke>LShoulderForward</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell1</name>
-			<keystrokes>
-				<keystroke>LShoulderBack</keystroke>
-			</keystrokes>
-		</move>
 		
 		<move>
 			<name>CastSpell2</name>
 			<keystrokes>
 				<keystroke>RShoulder</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell2</name>
-			<keystrokes>
-				<keystroke>RShoulderUp</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell2</name>
-			<keystrokes>
-				<keystroke>RShoulderDown</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell2</name>
-			<keystrokes>
-				<keystroke>RShoulderForward</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell2</name>
-			<keystrokes>
-				<keystroke>RShoulderBack</keystroke>
 			</keystrokes>
 		</move>
 		
@@ -108,59 +60,11 @@
 				<keystroke>LTrigger</keystroke>
 			</keystrokes>
 		</move>
-		<move>
-			<name>CastSpell3</name>
-			<keystrokes>
-				<keystroke>LTriggerUp</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell3</name>
-			<keystrokes>
-				<keystroke>LTriggerDown</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell3</name>
-			<keystrokes>
-				<keystroke>LTriggerForward</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell3</name>
-			<keystrokes>
-				<keystroke>LTriggerBack</keystroke>
-			</keystrokes>
-		</move>
 		
 		<move>
 			<name>CastSpell4</name>
 			<keystrokes>
 				<keystroke>RTrigger</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell4</name>
-			<keystrokes>
-				<keystroke>RTriggerUp</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell4</name>
-			<keystrokes>
-				<keystroke>RTriggerDown</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell4</name>
-			<keystrokes>
-				<keystroke>RTriggerForward</keystroke>
-			</keystrokes>
-		</move>
-		<move>
-			<name>CastSpell4</name>
-			<keystrokes>
-				<keystroke>RTriggerBack</keystroke>
 			</keystrokes>
 		</move>
 		
