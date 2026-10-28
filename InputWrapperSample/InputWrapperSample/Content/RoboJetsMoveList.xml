@@ -32,6 +32,37 @@
 			</keystrokes>
 		</Move>
 
+        <Move>
+			<name>FireGun</name>
+			<keystrokes>
+				<Item Type="string">RTrigger</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FireGun</name>
+			<keystrokes>
+				<Item Type="string">RTriggerUp</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FireGun</name>
+			<keystrokes>
+				<Item Type="string">RTriggerDown</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FireGun</name>
+			<keystrokes>
+				<Item Type="string">RTriggerForward</Item>
+			</keystrokes>
+		</Move>
+		<Move>
+			<name>FireGun</name>
+			<keystrokes>
+				<Item Type="string">RTriggerBack</Item>
+			</keystrokes>
+		</Move>
+
 		<Move>
 			<name>FlyUpShootNeutral</name>
 			<keystrokes>
