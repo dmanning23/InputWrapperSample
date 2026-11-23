@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "InputWrapperSample",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/InputWrapperSample/bin/Debug/net9.0/InputWrapperSample.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/InputWrapperSample",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "env": {
+                "MGFXC_WINE_PATH": "/Users/danmanning/.winemonogame"
+            }
+        }
+    ]
+}
